@@ -13,7 +13,7 @@ print("Matricea ta este:")
 print(matrice)
 
 
-print("\n--- Cerința 2 ---")
+print("--- Cerința 2 ---")
 nume_fisier = input("Cum se numește fișierul de citit? (ex: date.txt) ")
 
 try:
