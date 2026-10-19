@@ -11,3 +11,14 @@ for i in range(linii):
 
 print("Matricea ta este:")
 print(matrice)
+
+
+print("\n--- Cerința 2 ---")
+nume_fisier = input("Cum se numește fișierul de citit? (ex: date.txt) ")
+
+try:
+    fisier = open(nume_fisier, "r")
+    text_fisier = fisier.read()
+    print("Numerele din fișier sunt:", text_fisier.split())
+except:
+    print("Eroare: Nu am gasit fisierul!")
