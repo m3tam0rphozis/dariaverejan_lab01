@@ -16,3 +16,14 @@ for i in range(randuri):
 print("\nMatricea citita este:")
 for rand in matrice:
     print(rand)
+
+
+    # Citire din fisier
+nume_fisier = input("\nIntrodu numele fisierului text (ex: date.txt): ")
+try:
+    with open(nume_fisier, "r") as f:
+        continut = f.read().split()
+        numere_fisier = [int(x) for x in continut]
+        print(f"Valorile din fisier sunt: {numere_fisier}")
+except FileNotFoundError:
+    print(f"Eroare: Fisierul '{nume_fisier}' nu exista.")
